@@ -80,7 +80,57 @@
 				Categoria 7
 			</div>					
 		</div> <!-- fim content -->
+
+		<div id="sidebar">
+			<div id="sidebar-vistos">
+				mais vistos
+			</div>
+			
+			<div id="sidebar-categoria1">
+				categoria 1
+			</div>
+
+			<div id="sidebar-publicidade">
+				Publicidade
+			</div>
+
+			<div id="sidebar-categoria2">
+				categoria 2
+			</div>
+
+			<div id="sidebar-facebook">
+				Facebook
+			</div>
+
+		</div> <!-- fim da sidebar -->
+
+
 	</div> <!-- fim container -->
+
+	<div id="footer">
+		
+		<div id="footer-content">
+			<div id="footer-bio">
+			Sobre nós
+			</div>
+
+			<div id="footer-pages">
+			Paginas
+			</div>
+
+			<div id="footer-posts">
+			Posts Recentes
+			</div>
+
+			<div id="footer-social">
+			Social
+			</div>
+		</div> <!-- fim footer -->
+
+		<div id="footer-info">
+			Copyright
+		</div><!-- fim footer info -->
+	</div>
 		
 	<?php wp_footer(); ?>	
 	</body>
