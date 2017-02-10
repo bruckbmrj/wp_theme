@@ -1,6 +1,9 @@
 <div id="footer">
 		
 		<div id="footer-content">
+			
+			<?php wp_footer(); ?>
+
 			<div id="footer-bio">
 			Sobre nós
 			</div>
