@@ -9,42 +9,8 @@
 </head>	
 	<body>
 
-	<div id="header">
-		
-		<div id="header-superior">
-			<div id="header-superior-content">
-				<div id="header-paginas">
-					Header Paginas
-				</div>
-
-				<div id="header-social">
-					Header Social
-				</div>
-
-			</div>
-		</div>
-
-		<div id="header-contet">
-			<div id="logo">
-				Logo
-			</div>
-
-			<div id="login">
-				Login
-			</div>
-
-			<div id="search">
-				Search
-			</div>
-		</div>
-
-		<div id="nav">
-			<div id="nav-content">
-				Barra de navegação
-			</div>
-		</div> 
-
-	</div> <!-- Fim header -->
+<!-- header -->
+<?php get_header(); ?>
 
 	<div id="container">
 		<div id="content">
@@ -81,56 +47,14 @@
 			</div>					
 		</div> <!-- fim content -->
 
-		<div id="sidebar">
-			<div id="sidebar-vistos">
-				mais vistos
-			</div>
-			
-			<div id="sidebar-categoria1">
-				categoria 1
-			</div>
-
-			<div id="sidebar-publicidade">
-				Publicidade
-			</div>
-
-			<div id="sidebar-categoria2">
-				categoria 2
-			</div>
-
-			<div id="sidebar-facebook">
-				Facebook
-			</div>
-
-		</div> <!-- fim da sidebar -->
+<!--sidebar -->
+<?php get_sidebar(); ?>
 
 
 	</div> <!-- fim container -->
 
-	<div id="footer">
-		
-		<div id="footer-content">
-			<div id="footer-bio">
-			Sobre nós
-			</div>
-
-			<div id="footer-pages">
-			Paginas
-			</div>
-
-			<div id="footer-posts">
-			Posts Recentes
-			</div>
-
-			<div id="footer-social">
-			Social
-			</div>
-		</div> <!-- fim footer -->
-
-		<div id="footer-info">
-			Copyright
-		</div><!-- fim footer info -->
-	</div>
+<!-- footer -->	
+<?php get_footer(); ?>
 		
 	<?php wp_footer(); ?>	
 	</body>
