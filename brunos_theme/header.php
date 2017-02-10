@@ -3,11 +3,20 @@
 		<div id="header-superior">
 			<div id="header-superior-content">
 				<div id="header-paginas">
-					Header Paginas
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Link2</a></li>
+						<li><a href="#">Link3</a></li>
+						<li><a href="#">Link4</a></li>
+						<li><a href="#">Link5</a></li>
+					</ul>
 				</div>
 
 				<div id="header-social">
-					Header Social
+					<a href=""><img src="<?php bloginfo('template_url'); ?>/images/social.png" alt=""></a>
+					<a href=""><img src="<?php bloginfo('template_url'); ?>/images/instagram-social-network-logo-of-photo-camera.png" alt=""></a>
+					<a href=""><img src="<?php bloginfo('template_url'); ?>/images/twitter-logo.png" alt=""></a>
+					<a href=""><img src="<?php bloginfo('template_url'); ?>/images/youtube-logo.png" alt=""></a>
 				</div>
 
 			</div>
