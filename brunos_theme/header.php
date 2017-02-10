@@ -22,18 +22,26 @@
 			</div>
 		</div>
 
-		<div id="header-contet">
+		<div id="header-content">
 			<div id="logo">
-				Logo
-			</div>
-
-			<div id="login">
-				Login
+				<a href="#"><img src="<?php bloginfo('template_url')?>/images/logo_custom.png" alt=""></a>
 			</div>
 
 			<div id="search">
-				Search
+				<form action="" method="post">
+					<input type="text" name="">
+					<input type="submit" value="" class="btn-search" name="">
+				</form>
 			</div>
+
+			<div id="login">
+				<ul>
+					<li class="logar"><a href="">Login</a></li>
+					<li class="register"><a href="">Register</a></li>
+				</ul>
+			</div>
+
+			
 		</div>
 
 		<div id="nav">

@@ -59,3 +59,67 @@ body{
 	color: #ed5353;
 	background: #eee;
 }
+
+#header-social{
+	float: right;
+}
+#header-social a{
+	display: block;
+	margin: 12px 0 0 10px;
+	float: left;
+}
+
+#header-content{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#logo{
+	float: left;
+	padding: 20px 0;
+}
+
+#login{
+	float: right;
+	margin-top: 60px; 
+	margin-right: 40px;
+}
+#login ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#login ul li{
+	float: left;
+}
+#login ul li a{
+	padding: 6px;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+#login ul .logar a{
+	background: #292929;
+}
+#login ul .register a{
+	background: #171717;
+}
+
+
+#search{
+	float: right;
+}
+#search input{
+	float: left;
+	border:  0;
+	padding: 14px 8px;
+	width: 270px;
+	background: #f5f5f5;
+	margin-top: 50px;
+}
+#search .btn-search{
+	background: #f5f5f5 url(images/search.png) no-repeat center;
+	width: 38px;
+	cursor: pointer;
+}
