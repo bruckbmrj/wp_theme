@@ -9,10 +9,16 @@ Version: 1.0
 	padding: 0;
 }
 
-body{
+html, body{
 	background: #fff;
 	font: 14px arial,tahoma,verdana;
 	text-align: center;
+	height: 100%; /* Define a altura para o body e o html para fixar o rodapé */
+}
+
+#geral {
+	min-height: 100%;
+	position:relative;
 }
 
 /* === header === */
@@ -40,7 +46,7 @@ body{
 #header-paginas ul{
 	margin: 0;
 	padding: 0;
-	list-style: none; 
+	list-style: none;
 }
 
 #header-paginas ul li{
