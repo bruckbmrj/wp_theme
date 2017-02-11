@@ -1,27 +1,8 @@
 <div id="footer">
-		
-		<div id="footer-content">
-			
-			<?php wp_footer(); ?>
-
-			<div id="footer-bio">
-			Sobre nós
-			</div>
-
-			<div id="footer-pages">
-			Paginas
-			</div>
-
-			<div id="footer-posts">
-			Posts Recentes
-			</div>
-
-			<div id="footer-social">
-			Social
-			</div>
-		</div> <!-- fim footer -->
+	<?php wp_footer(); ?>
+		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) : ?><?php endif; ?>
 
 		<div id="footer-info">
-			Copyright
-		</div><!-- fim footer info -->
-	</div> <!--fim footer -->
+		<p>&copy; 2017 - Todos os Direitos Reservados</p>
+	</div><!-- fim footer info -->
+</div> <!--fim footer -->

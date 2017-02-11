@@ -4,8 +4,9 @@
 	<meta charset="<?php bloginfo('charset') ?>" />
 	<title><?php wp_title('-',true,'right'); bloginfo() ?></title>
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url') ?>/style.css" />
+	
+	<?php wp_head(); ?>
 
-<?php wp_head(); ?>
 </head>	
 	<body>
 
@@ -47,16 +48,16 @@
 			</div>					
 		</div> <!-- fim content -->
 
-<!--sidebar -->
-<?php get_sidebar(); ?>
+	<!--sidebar -->
+	<?php get_sidebar(); ?>
 
+	<!-- footer -->	
+	<?php get_footer(); ?>
+
+	
+	<?php wp_footer(); ?>
 
 	</div> <!-- fim container -->
-
-<!-- footer -->	
-<?php get_footer(); ?>
-		
-	<?php wp_footer(); ?>	
 	</body>
 
 </html>
