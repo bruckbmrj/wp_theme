@@ -123,3 +123,62 @@ body{
 	width: 38px;
 	cursor: pointer;
 }
+
+/* menu de navegação */
+#nav {
+	width: 100%;
+	float: left;
+	background: #222;
+	border-top: 3px solid #ed5353;
+}
+
+#nav-content{
+	width: 1000px;
+	margin: 0 auto;
+}
+#nav-content ul{
+	float: left;
+	list-style: none;
+	text-align: left;
+}
+#nav-content ul li{
+	float: left;
+	position: relative;
+	font: 14px arial,verdana,tahoma;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-right: 1px solid #333;
+}
+#nav-content ul li a{
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+#nav-content ul li:hover{
+	background: #ed5353;
+}
+#nav-content ul li:hover ul{
+	display: block;
+}
+#nav-content ul li ul{
+	width: 260px;
+	display: none;
+	background: #f8f8f8;
+	position: absolute;
+	border-left: 5px solid #ed5353;
+}
+#nav-content ul li ul li{
+	border-right: none;
+	
+	width: 260px;
+}
+#nav-content ul li ul li a{
+	padding: 10px 12px;
+	color: #666;
+	border-bottom: 1px solid #e1e1e1;
+}
+#nav-content ul li ul li a:hover{
+	background: #eee;
+	color: #ed5353;
+}
