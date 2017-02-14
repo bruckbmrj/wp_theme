@@ -18,6 +18,11 @@ body{ background: #fff; font: 14px arial,tahoma,verdana; text-align: center; }
 	position:relative;
 }
 
+#geral {
+	min-height: 100%;
+	position:relative;
+}
+
 /* === header === */
 #header { width: 100%; background: #dddddd; }
 
