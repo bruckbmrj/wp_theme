@@ -27,53 +27,72 @@
 			<div id="destaque">
 				
 				<div class="destaque-post">
-					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post.jpg" rel="" title="" alt="" /></a>
+
+					<?php query_posts('category_name=destaques&offset=0&showposts=1'); ?>
+
+					<?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+
+					<a href="<?php the_Permalink(); ?>"> <?php the_post_thumbnail(); ?></a>
 					<div class="destaque-info">
 						<ul>
-							<li class="dest-autor">Autor</li>
-							<li class="dest-views">Views</li>
-							<li class="dest-coment">Coments</li>
+							<li class="dest-autor"> <?php the_author(); ?> </li>
+							<li class="dest-views"> <?php if(function_exists('the_views')) {the_views();} ?> </li>
+							<li class="dest-coment"> <?php comments_number('0','1','%'); ?> </li>
 						</ul>
 					</div>
-					<h1><a href="#">Titulo aleatório 1</a></h1>
+					<h1><a href=" <?php the_Permalink(); ?> "><?php the_title(); ?></a></h1>
+					<?php endwhile; else: ?>
+					<?php endif; ?>	
 
 					<div class="list-dest">
 						<ul>
-							<li>
-								<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post2.jpg" rel="" title="" alt=""/> </a>
-								<h2><a href="#">Titulo aleatorio: o segundo para testes</a></h2>
-							</li>
+
+							<?php query_posts('category_name=destaques&offset=2&showposts=2'); ?>
+							<?php if (have_posts()) : while(have_posts()) : the_post(); ?>	
 
 							<li>
-								<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post2.jpg" rel="" title="" alt=""> </a>
-								<h2><a href="#">Titulo aleatório: o terceiro teste no tema.</a></h2>
+								<a href="<?php the_Permalink(); ?>"> <?php the_post_thumbnail(); ?></a>
+								<h2><a href=" <?php the_Permalink(); ?> "><?php the_title(); ?></a></h2>
 							</li>
+
+							<?php endwhile; else: ?>
+							<?php endif; ?>	
+
 						</ul>
 					</div>
 				</div> <!-- fim destaque post -->
 
 				<div class="destaque-post right">
-					<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post.jpg" rel="" title="" alt="" /></a>
+					<?php query_posts('category_name=destaques&offset=1&showposts=1'); ?>
+
+					<?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+
+					<a href="<?php the_Permalink(); ?>"> <?php the_post_thumbnail(); ?>
 					<div class="destaque-info">
 						<ul>
-							<li class="dest-autor">Autor</li>
-							<li class="dest-views">Views</li>
-							<li class="dest-coment">Coments</li>
+							<li class="dest-autor"> <?php the_author(); ?> </li>
+							<li class="dest-views"> <?php if(function_exists('the_views')) {the_views();} ?> </li>
+							<li class="dest-coment"> <?php comments_number('0','1','%'); ?> </li>
 						</ul>
 					</div>
-					<h1><a href="#">Titulo aleatório 1</a></h1>
+					<h1><a href=" <?php the_Permalink(); ?> "><?php the_title(); ?></a></h1>
+					<?php endwhile; else: ?>
+					<?php endif; ?>	
 
 					<div class="list-dest">
 						<ul>
-							<li>
-								<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post2.jpg" rel="" title="" alt=""/> </a>
-								<h2><a href="#">Titulo aleatorio: o segundo para testes</a></h2>
-							</li>
+
+							<?php query_posts('category_name=destaques&offset=4&showposts=2'); ?>
+							<?php if (have_posts()) : while(have_posts()) : the_post(); ?>	
 
 							<li>
-								<a href="#"><img src="<?php bloginfo('template_url'); ?>/images/post2.jpg" rel="" title="" alt=""> </a>
-								<h2><a href="#">Titulo aleatório: o terceiro teste no tema.</a></h2>
+								<a href="<?php the_Permalink(); ?>"> <?php the_post_thumbnail(); ?></a>
+								<h2><a href=" <?php the_Permalink(); ?> "><?php the_title(); ?></a></h2>
 							</li>
+
+							<?php endwhile; else: ?>
+							<?php endif; ?>	
+
 						</ul>
 					</div>
 				</div> <!-- fim destaque post -->

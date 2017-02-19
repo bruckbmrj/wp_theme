@@ -4,11 +4,9 @@
 			<div id="header-superior-content">
 				<div id="header-paginas">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Link2</a></li>
-						<li><a href="#">Link3</a></li>
-						<li><a href="#">Link4</a></li>
-						<li><a href="#">Link5</a></li>
+						<li><a href="<?php bloginfo('home');?>">Home</a></li>
+						<?php wp_list_pages('title_li='); ?>
+
 					</ul>
 				</div>
 
@@ -24,7 +22,7 @@
 
 		<div id="header-content">
 			<div id="logo">
-				<a href="#"><img src="<?php bloginfo('template_url')?>/images/logo_custom.png" alt=""></a>
+				<a href="<?php bloginfo('home'); ?>"><img src="<?php bloginfo('template_url')?>/images/logo_custom.png" alt=""></a>
 			</div>
 
 			<div id="search">
@@ -36,8 +34,8 @@
 
 			<div id="login">
 				<ul>
-					<li class="logar"><a href="">Login</a></li>
-					<li class="register"><a href="">Register</a></li>
+					<li class="logar"><a href="http://atencil.tk/v1/wp-admin">Login</a></li>
+					<li class="register"><a href="http://atencil.tk/v1/wp-login.php?action=register">Register</a></li>
 				</ul>
 			</div>
 
@@ -47,29 +45,7 @@
 		<div id="nav">
 			<div id="nav-content">
 				<ul>
-					<li><a href="#">Link1</a></li>
-
-					<li><a href="#">Link2</a>
-						<ul>
-							<li><a href="">Link A</a></li>
-							<li><a href="">Link B</a></li>
-							<li><a href="">Link C</a></li>
-							<li><a href="">Link D</a></li>
-							<li><a href="">Link E</a></li>
-						</ul>
-					</li>
-
-					<li><a href="#">Link3</a></li>
-					<li><a href="#">Link4</a></li>
-					<li><a href="#">Link5</a></li>
-					<li><a href="#">Link6</a>
-						<ul>
-							<li><a href="">Link F</a></li>
-							<li><a href="">Link G</a></li>
-							<li><a href="">Link H</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Link7</a></li>
+					<?php wp_list_categories('title_li=&hide_empty=0&orderby&depth=2&exclude=52'); ?>
 				</ul>
 			</div>
 		</div> 

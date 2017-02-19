@@ -127,11 +127,11 @@ no-repeat left center;  }
 
 #destaque .list-dest{ width: 100%; float: left; margin-top: 20px; }
 
-#destaque .list-dest li{ list-style: none; float: left; padding: 14px 0; border-top: 1px solid #efeeee; }
+#destaque .list-dest li{ width: 100%!important; list-style: none; float: left; padding: 14px 0; border-top: 1px solid #efeeee; }
 
 #destaque .list-dest img{ width: 96px; height: 70px; float: left; margin-right: 8px; }
 
-#destaque .list-dest h2{ font:  14px arial; }
+#destaque .list-dest h2{ font: 14px arial; }
 #destaque .list-dest h2 a { color:  #444; text-decoration: none; }
 #destaque .list-dest h2 a:hover{ color: #ed5353; text-decoration: underline; }
 
@@ -173,11 +173,11 @@ no-repeat left center;  }
 #categoria2 .post-2 h1 a:hover { text-decoration: underline; color: #ed5353; }
 #categoria2 .cat2-info { width: 210px; margin: 6px 0; float: left;}
 #categoria2 .cat2-info ul { margin: 0; padding: 0; list-style: none;}
-#categoria2 .cat2-info ul li { width: 60px; float: left; color: #777; }
+#categoria2 .cat2-info ul li { width: 60px; float: left; color: #777; padding: 4px 20px; }
 #categoria2 .cat2-info ul .cat2-autor{ background: url('images/autor.png')
-no-repeat left center; }
+no-repeat center left ; }
 #categoria2 .cat2-info ul .cat2-coment{ background: url('images/coment.png')
-no-repeat left center;  }
+no-repeat center left ;  }
 #categoria2 .post-2 p { font: 14px arial; color: #888;}
 
 
