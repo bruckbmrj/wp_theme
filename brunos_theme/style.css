@@ -152,13 +152,14 @@ border-bottom: 1px solid #efeeee;}
 #categoria1 .cat1-info{ width: 400px; margin: 2px 0; float: left; }
 #categoria1 .cat1-info ul{ margin: 0; padding: 0; list-style: none; }
 #categoria1 .cat1-info ul li{width: 60px; color: #777; float: left; padding: 4px 20px; }
-#categoria1 .cat1-info ul .cat1-autor{ background: url('images/autor.png')
+#categoria1 .cat1-info ul .cat1-autor{ width: 100px; background: url('images/autor.png')
 no-repeat left center; }
 #categoria1 .cat1-info ul .cat1-views{ background: url('images/views.png')
 no-repeat left center; }
 #categoria1 .cat1-info ul .cat1-coment{ background: url('images/coment.png')
 no-repeat left center;  }
 #categoria1 .post-1 p{ color: #888; float: left; width: 450px;}
+#categoria1 .post-1 p a{ color: #069; }
 
 
 /* == Categoria 2 == */
@@ -179,7 +180,7 @@ no-repeat center left ; }
 #categoria2 .cat2-info ul .cat2-coment{ background: url('images/coment.png')
 no-repeat center left ;  }
 #categoria2 .post-2 p { font: 14px arial; color: #888;}
-
+#categoria2 .post-2 p a {color: #069;}
 
 /* == Bloco categoria 3 e 4 == */
 #bloco-cat3-4 { width: 100% ; float: left; border-bottom: 1px solid #efeeee;
@@ -191,14 +192,14 @@ border-bottom: 2px solid #ed5353; padding: 5px 0;}
 #categoria3 img{ width: 330px; height: 180px; margin: 20px 0 0 0; float: left;}
 .cat3-info{ width: 100%; float: left; background: #ed5353; }
 .cat3-info ul{ margin: 0; padding: 0; list-style: none; }
-.cat3-info ul li{ float: left; width: 60px; color: #f8f8f8; padding: 4px 20px; }
-.cat3-info ul .cat3-autor{ background: url('images/autor-branco.png') no-repeat left center; }
-.cat3-info ul .cat3-views{ background: url('images/views-branco.png') no-repeat left center; }
+.cat3-info ul li{ float: left; width: 40px; color: #f8f8f8; padding: 4px 20px; }
+.cat3-info ul .cat3-autor{ width: 100px; background: url('images/autor-branco.png') no-repeat left center; }
+.cat3-info ul .cat3-views{ width: 15%; background: url('images/views-branco.png') no-repeat left center; }
 .cat3-info ul .cat3-coment{ background: url('images/coment-branco.png') no-repeat left center; }
 #categoria3 h1{ font: 14px arial; font-weight: bold; float: left; margin: 10px 0; }
 #categoria3 h1 a{ color: #444; text-decoration: none; }
 #categoria3 h1 a:hover{ text-decoration: underline; color: #ed5353; }
-#categoria3 #cat3-list{float: left;}
+#categoria3 #cat3-list{float: left; width: 100%;}
 #categoria3 #cat3-list ul{ margin: 0; padding: 0; list-style: none; } 
 #categoria3 #cat3-list ul li{ width: 100%; float: left; border-top: 1px solid #efeeee;
 padding: 10px 0;}
@@ -221,7 +222,7 @@ border-bottom: 2px solid #ed5353; padding: 5px 0;}
 #categoria4 h1{ font: 14px arial; font-weight: bold; float: left; margin: 10px 0; }
 #categoria4 h1 a{ color: #444; text-decoration: none; }
 #categoria4 h1 a:hover{ text-decoration: underline; color: #ed5353; }
-#categoria4 #cat4-list{float: left;}
+#categoria4 #cat4-list{float: left; width: 100%;}
 #categoria4 #cat4-list ul{ margin: 0; padding: 0; list-style: none; } 
 #categoria4 #cat4-list ul li{ width: 100%; float: left; border-top: 1px solid #efeeee;
 padding: 10px 0;}
@@ -247,7 +248,7 @@ border-bottom: 2px solid #ed5353; padding: 5px 0;}
 #categoria5 h1{ font: 14px arial; font-weight: bold; float: left; margin: 10px 0; }
 #categoria5 h1 a{ color: #444; text-decoration: none; }
 #categoria5 h1 a:hover{ text-decoration: underline; color: #ed5353; }
-#categoria5 #cat5-list{float: left;}
+#categoria5 #cat5-list{float: left; width: 100%;}
 #categoria5 #cat5-list ul{ margin: 0; padding: 0; list-style: none; } 
 #categoria5 #cat5-list ul li{ width: 100%; float: left; border-top: 1px solid #efeeee;
 padding: 10px 0;}
@@ -270,7 +271,7 @@ border-bottom: 2px solid #ed5353; padding: 5px 0;}
 #categoria6 h1{ font: 14px arial; font-weight: bold; float: left; margin: 10px 0; }
 #categoria6 h1 a{ color: #444; text-decoration: none; }
 #categoria6 h1 a:hover{ text-decoration: underline; color: #ed5353; }
-#categoria6 #cat6-list{float: left;}
+#categoria6 #cat6-list{float: left; width: 100%;}
 #categoria6 #cat6-list ul{ margin: 0; padding: 0; list-style: none; } 
 #categoria6 #cat6-list ul li{ width: 100%; float: left; border-top: 1px solid #efeeee;
 padding: 10px 0;}
