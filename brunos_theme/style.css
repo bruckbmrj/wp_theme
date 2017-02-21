@@ -358,10 +358,11 @@ text-align: left; }
 #footer-content #title-footer span{float: left; padding: 10px 0;}
 
 #footer-bio{ width: 330px; float: left; margin-top: 25px; margin-right: 25px;}
+#footer-bio a{ color: #ed5353; }
 #footer-bio #title-bio{ width: 100%; padding: 5px 0; border-bottom: 2px solid #efeeee;
 margin-bottom: 10px; }
 #footer-bio #title-bio span { font: 22px arial; font-weight: bold; padding: 5px 0;
-color: #f8f8f8; border-bottom: 2px solid #ed5353;}
+color: #f8f8f8; border-bottom: 2px solid #ed5353; text-transform: uppercase;}
 #footer-bio p{ font: 14px arial; color: #bcbbbb; line-height: 18px; padding: 6px 0; }
 
 #footer-pages{ width: 290px; float: left; margin-top: 25px; }

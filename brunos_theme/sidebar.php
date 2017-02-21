@@ -4,31 +4,17 @@
 
 				<div id="title-vistos"><span>Posts Mais vistos</span></div>
 
+				<?php if (function_exists('get_most_viewed')) : ?>
+
 				<ul>
-					<li>
-					<span class="vistos-number">1</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					</li>
 
 					<li>
-					<span class="vistos-number">2</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+					
+					<?php get_most_viewed('post',5); ?>
 					</li>
 
-					<li>
-					<span class="vistos-number">3</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					</li>
+				<?php endif; ?>
 
-					<li>
-					<span class="vistos-number">4</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					</li>
-
-					<li>
-					<span class="vistos-number">5</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					</li>
 				</ul>
 
 			</div>

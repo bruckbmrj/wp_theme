@@ -7,14 +7,18 @@
 			</div>
 
 			<div id="footer-bio">
+
+				<?php query_posts('page_id=97'); ?>
+				<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 			
 				<div id="title-bio">
-					<span>Sobre Nós</span>
+					<span><?php the_title(); ?></span>
 				</div>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, vel recusandae, quos mollitia deleniti quibusdam!</p>
+				<p><?php the_excerpt(); ?> <a href="<?php the_Permalink(); ?>"> Leia Mais...</a> </p>
 
-				<p>Lorem ipsum dolor sit amet,  Ab nihil consectetur adipisicing elit. Expedita placeat vel recusandae, ipsum aliquid aliquam natus.</p>
+				<?php endwhile; else: ?>
+				<?php endif; ?>
 
 			</div>
 
@@ -24,11 +28,9 @@
 				</div>
 
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Serviços</a></li>
-					<li><a href="#">Sobre Nós </a></li>
-					<li><a href="#">Arquivos</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="<?php bloginfo('home'); ?>">Home</a></li>
+					<?php wp_list_pages('title_li=') ?>
+
 				</ul>
 			</div>
 
@@ -38,10 +40,14 @@
 				</div>
 				
 				<ul>
-					<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></li>
-					<li><a href="#">Quam voluptas animi voluptates accusamus eos provident, nam totam odio ab.</a></li>
-					<li><a href="#">soluta sint quae commodi minima provident dicta repudiandae fuga ad, nemo cumque?</a></li>
-				</ul>
+
+				<?php query_posts('showposts=5'); ?>
+				<?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+
+					<li><a href="<?php the_Permalink(); ?>"><?php the_title(); ?></a></li>
+
+				<?php endwhile; else: ?>
+				<?php endif; ?>
 
 			</div>
 
