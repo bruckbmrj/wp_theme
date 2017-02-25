@@ -337,7 +337,7 @@ background: #eee; margin: 18px 0;}
 	padding: 10px 0; }
 #sidebar-coment ul li a{ color: #555; text-decoration: none;}	
 #sidebar-coment ul li a:hover{ color: #ed5353; text-decoration: underline; }
-#sidebar-coment .vistos-coment{ padding: 10px; font: 18px arial; color: #fff;
+/* #sidebar-coment */ span.coment-number { padding: 10px; font: 18px arial; color: #fff;
 float: left; background: #ed5353; margin-right: 10px; }
 
 /* == Facebook == */
@@ -348,6 +348,28 @@ float: left; background: #ed5353; margin-right: 10px; }
 #face-box { margin-top: 20px; }	
 
 
+/* == Paginas == */
+.main-page{ margin-top: 30px; }
+.main-page #title-page{ border-bottom: 2px solid #efeeee; padding: 5px 0; }
+.main-page #title-page span{ text-transform: uppercase; font:  22px arial; font-weight: bold; color: #292929;
+border-bottom: 2px solid #e35353; padding: 5px 0;}
+.main-page p { margin-top: 15px;  font: 13px arial; color: #555;}
+.main-page p a { color: #069; text-decoration: none; }
+.main-page p a:hover { text-decoration: underline; } 
+.main-page ul li { font:  13px arial; color: #666; margin: 10px 20px; }
+.main-page ol li { font:  13px arial; color: #666; margin: 10px 20px; }
+.main-page h1, h2,h3 { margin-top: 20px; }
+.main-page h1 { font: 24px arial; color: #ed5353; }
+.main-page h2 { font: 22px arial; color: #ed5353; }
+.main-page blockquote { padding: 10px; border-left: 2px solid #e35353; background: #eee;
+margin-top: 15px;}
+
+/* == Formulário contato ==*/
+.main-page form input[type=text], [type=email] { background: #eee; border: 1px solid #e1e1e1; padding: 8px; }
+.main-page form input[type=text]:focus, [type=email]:focus { border: 1px solid #069; }
+.main-page form textarea{ background: #eee; border: 1px solid #e1e1e1; padding: 8px; }
+.main-page form textarea:focus { border: 1px solid #069; }
+.main-page form input[type=submit] {background: #222; color: #fff; padding: 8px; border: 2px solid #000; cursor: pointer;}
 
 /* == Footer ==*/
 #footer{ width: 100%; clear: both; background: #222; overflow: hidden; margin-top: 40px;

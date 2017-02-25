@@ -19,133 +19,9 @@
 
 			</div>
 			
-			<div id="sidebar-colunistas">
-				<div id="title-colunistas">
-					<span>Colunistas</span>	
-				</div>
-				<div class="colunistas">
-					
-					<ul>
-						<li>
-							<img src="<?php bloginfo('template_url'); ?>/images/colunista1.png" rel="" title="" alt=""  />
-							<h1><a href="#">Vincent Van Doido</a></h1>
+			<!-- lista colunistas -->
+			<?php include_once("sidebar-author.php"); ?>
 
-							<div class="info-colunistas">
-								<ul>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/facebook.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/google+.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/twitter.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/youtube.png" title="" alt=""></a>
-									</li>
-								</ul>
-							</div>
-
-						</li>
-
-
-						<li>
-							<img src="<?php bloginfo('template_url'); ?>/images/colunista2.png" rel="" title="" alt=""  />
-							<h1><a href="#">Cleyton</a></h1>
-
-							<div class="info-colunistas">
-								<ul>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/facebook.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/google+.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/twitter.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/youtube.png" title="" alt=""></a>
-									</li>
-								</ul>
-							</div>
-
-						</li>
-
-						<li>
-							<img src="<?php bloginfo('template_url'); ?>/images/colunista1.png" rel="" title="" alt=""  />
-							<h1><a href="#">Vincent Van Doido</a></h1>
-
-							<div class="info-colunistas">
-								<ul>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/facebook.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/google+.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/twitter.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/youtube.png" title="" alt=""></a>
-									</li>
-								</ul>
-							</div>
-
-						</li>
-
-						<li>
-							<img src="<?php bloginfo('template_url'); ?>/images/colunista2.png" rel="" title="" alt=""  />
-							<h1><a href="#">Cleyton</a></h1>
-
-							<div class="info-colunistas">
-								<ul>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/facebook.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/google+.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/twitter.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/youtube.png" title="" alt=""></a>
-									</li>
-								</ul>
-							</div>
-
-						</li>
-
-						<li>
-							<img src="<?php bloginfo('template_url'); ?>/images/colunista2.png" rel="" title="" alt=""  />
-							<h1><a href="#">Cleyton</a></h1>
-
-							<div class="info-colunistas">
-								<ul>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/facebook.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/google+.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/twitter.png" title="" alt=""></a>
-									</li>
-									<li>
-										<a href="#"> <img src="<?php bloginfo('template_url'); ?>/images/youtube.png" title="" alt=""></a>
-									</li>
-								</ul>
-							</div>
-
-						</li>
-
-					</ul>
-
-				</div>
-			</div> <!-- fim colunistas -->
 
 			<div id="sidebar-publicidade">
 				<div id="title-publi"><span>Publicidade</span></div>
@@ -163,31 +39,26 @@
 				<div id="title-coment"><span>Mais Comentados</span></div>
 
 				<ul>
+					
+					<?php $result = $wpdb->get_results("SELECT comment_count,ID,post_title FROM $wpdb->posts ORDER BY comment_count DESC LIMIT 0 , 5");
+						foreach($result as $post){
+							setup_postdata($post);
+							$postid = $post->ID;
+							$title = $post->post_title;
+							$commentcount = $post->comment_count;
+							if($commentcount != 0) { ?> 
+						 
+					
 					<li>
-					<span class="coment-number">1</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+					<span class="coment-number"> <?php $i = $i; $i++; echo $i ?></span>
+					<a href=" <?php the_permalink(); ?> "><?php echo $title; ?>(<?php echo $commentcount; ?>) </a>
 					</li>
 
-					<li>
-					<span class="coment-number">2</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					</li>
+					<?php } ?>
+					<?php } ?>
 
-					<li>
-					<span class="coment-number">3</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					</li>
-
-					<li>
-					<span class="coment-number">4</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					</li>
-
-					<li>
-					<span class="coment-number">5</span>
-					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-					</li>
 				</ul>
+
 			</div> <!-- fim comentários -->
 
 			<div id="sidebar-facebook">

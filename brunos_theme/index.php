@@ -100,7 +100,7 @@
 
 			</div> <!-- fim destaque -->
 
-			<div id="categoria1">
+			<div id="categoria1"> 
 
 				<div id="title-cat1"><span>CATEGORIA 1</span></div>
 
