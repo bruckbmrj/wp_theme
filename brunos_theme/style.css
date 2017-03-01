@@ -364,12 +364,68 @@ border-bottom: 2px solid #e35353; padding: 5px 0;}
 .main-page blockquote { padding: 10px; border-left: 2px solid #e35353; background: #eee;
 margin-top: 15px;}
 
+/* == Single == */
+.main-single{ margin-top: 30px; }
+.main-single #title-single{ border-bottom: 2px solid #efeeee; padding: 5px 0; }
+.main-single #title-single span{ text-transform: uppercase; font:  22px arial; font-weight: bold; color: #292929;
+border-bottom: 2px solid #222; padding: 5px 0;}
+.main-single p { margin-top: 15px;  font: 13px arial; color: #555;}
+.main-single p a { color: #069; text-decoration: none; }
+.main-single p a:hover { text-decoration: underline; } 
+.main-single ul li { font:  13px arial; color: #666; margin: 10px 20px; }
+.main-single ol li { font:  13px arial; color: #666; margin: 10px 20px; }
+.main-single h1, h2,h3 { margin-top: 20px; }
+.main-single h1 { font: 24px arial; color: #ed5353; }
+.main-single h2 { font: 22px arial; color: #ed5353; }
+.main-single blockquote { padding: 10px; border-left: 2px solid #e35353; background: #eee;
+margin-top: 15px;}
+
+/* caixa de author single */
+.author{background: #f0f0f0; border: 1px solid #d2d2d2; padding: 10px; 
+	width: auto; color: #333; overflow: hidden;}
+.author h3{ font-size: 18px; color: #222; margin: 0; text-transform: uppercase; }
+.author h3 a{ text-decoration: none; color: #222; font-weight: bold; }
+.author img { margin: 0; padding: 10px; float: left; border-bottom: solid #ed5353;
+ background: #e1e1e1; margin-right: 15px; width: 80px; height: 80px; }
+
+ /* comentarios single */
+#comments{width: 100%; float: left;}
+#comments a {color: #ed5353; text-decoration: none;}
+ol.commentlist { list-style: none; }
+ol.commentlist li { margin: 0 0 30px 0; list-style-type: none; }
+ol.commentlist li img{ float: left; border: 3px solid #eee; margin-right: 14px; }
+ol.commentlist ul { margin: 0px;}
+ol.commentlist ul li{ margin: 20px 20px 20px 40px; }
+#respond { margin: 0 0 30px 0; }
+#respond form label { float: left; clear: left; width: 60px; text-align: right;
+margin-right: 10px; }
+#respond form input { float: left; width: 250px; padding: 6px; margin-bottom: 10px; }
+#respond form textarea { float: left; width: 400px; height: 100px; margin-bottom: 10px; }
+#respond form input.commentsubmit {float: left; margin-left: 70px; width: 160px; 
+background: #ed5353; cursor: pointer; text-transform: uppercase; border: 3px solid #900;}
+#respond form input.commentsubmit:hover { background: #222; color: #fff; }
+
 /* == Formulário contato ==*/
 .main-page form input[type=text], [type=email] { background: #eee; border: 1px solid #e1e1e1; padding: 8px; }
 .main-page form input[type=text]:focus, [type=email]:focus { border: 1px solid #069; }
 .main-page form textarea{ background: #eee; border: 1px solid #e1e1e1; padding: 8px; }
 .main-page form textarea:focus { border: 1px solid #069; }
 .main-page form input[type=submit] {background: #222; color: #fff; padding: 8px; border: 2px solid #000; cursor: pointer;}
+
+/* categorias single */
+.main-category{ margin-top: 30px; }
+.main-category #title-category { border-bottom: 2px solid #efeeee; padding: 5px 0; }
+.main-category #title-category span{ text-transform: uppercase; font:  22px arial; font-weight: bold; color: #292929;
+border-bottom: 2px solid #222; padding: 5px 0;}
+.main-category ul li{width: 100%; float: left; border-bottom: 1px solid #eee;
+padding: 22px 0; list-style: none;}
+.main-category ul li img{width: 160px; height: 140px; float: left; margin-right:  15px;}
+.main-category ul li span { background: #e1e1e1; padding: 4px; display: inline-block; 
+	text-transform: uppercase; font-size: 10px; }
+.main-category ul li h1{ font: 25px arial; margin: 0; padding: 0; }
+.main-category ul li h1 a { text-decoration: none; color: #ed5353;}	
+.main-category ul li h1 a:hover{ color: #333; }
+.main-category ul li p {padding: 4px 0; color: #555;}
 
 /* == Footer ==*/
 #footer{ width: 100%; clear: both; background: #222; overflow: hidden; margin-top: 40px;

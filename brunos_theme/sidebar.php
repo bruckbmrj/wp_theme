@@ -51,7 +51,7 @@
 					
 					<li>
 					<span class="coment-number"> <?php $i = $i; $i++; echo $i ?></span>
-					<a href=" <?php the_permalink(); ?> "><?php echo $title; ?>(<?php echo $commentcount; ?>) </a>
+					<a href="<?php the_permalink(); ?>"><?php echo $title; ?>(<?php echo $commentcount; ?>) </a>
 					</li>
 
 					<?php } ?>
