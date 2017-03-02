@@ -27,7 +27,7 @@
 
 			<div class="main-category">
 				
-				<div id="title-category"><span> Resultado da Busca </span>
+				<div id="title-category"><span> Resultado da Pesquisa </span>
 				</div>
 			
 				<ul>
@@ -41,6 +41,10 @@
 					<?php endwhile; else: ?>
 					<?php endif; ?>	
 				</ul>
+
+					<div class="list-post">
+						<?php wp_pagenavi(); ?>
+					</div>
 
 			</div>
 				

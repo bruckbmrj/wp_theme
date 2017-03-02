@@ -427,6 +427,12 @@ padding: 22px 0; list-style: none;}
 .main-category ul li h1 a:hover{ color: #333; }
 .main-category ul li p {padding: 4px 0; color: #555;}
 
+/* == page-nav == */
+.list-post{ background: #e8e8e8; border: 1px solid #ccc; clear: both; padding: 10px 0 10px 5px;}
+.list-post .pages{ background: #eee; color: #069; text-transform: uppercase;}
+.list-post .current{ background: #ccc; color: #ed5353; border: none; padding: 4px; }
+.list-post .larger{ background: #fff; }
+
 /* == Footer ==*/
 #footer{ width: 100%; clear: both; background: #222; overflow: hidden; margin-top: 40px;
 text-align: left; }

@@ -41,6 +41,10 @@
 					<?php endif; ?>	
 				</ul>
 
+				<div class="list-post">
+					<?php wp_pagenavi(); ?>
+				</div>
+
 			</div>
 				
 		</div> <!-- fim content -->
